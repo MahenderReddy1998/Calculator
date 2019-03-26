@@ -12,6 +12,7 @@ public class Calculator {
         System.out.println("Enter your selection: 1 for Addition, 2 for substraction 3 for Multiplication and 4 for division:");
         int choose;
         choose = inp.nextInt();
+        inp.close();
         switch (choose){
         case 1:
             System.out.println(add( num1,num2));
@@ -63,5 +64,6 @@ public class Calculator {
     	result = x/y;
     	return result;
     }
+    
 
 }
